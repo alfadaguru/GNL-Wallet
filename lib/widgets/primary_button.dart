@@ -17,8 +17,10 @@ class PrimaryButton extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color.fromRGBO(11, 59, 130, 1),
-              Color.fromRGBO(38, 108, 254, 1),
+              // Color.fromRGBO(11, 59, 130, 1),
+              // Color.fromRGBO(38, 108, 254, 1),
+              secondaryColor,
+              secondaryColor
             ]
           )
         ),

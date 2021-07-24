@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-const primaryColor = Color.fromRGBO(26, 12, 52, 1.0);
+const primaryColor = Color.fromRGBO(20, 20, 22, 1.0);
 const secondaryColor = Color.fromRGBO(55, 204, 155, 1.0);
 const dangerColor = Color.fromRGBO(247, 71, 104, 1);
 const captionColor = Color.fromRGBO(98, 108, 139, 1);
