@@ -11,7 +11,12 @@ class AppTheme {
     textTheme: GoogleFonts.montserratTextTheme(),
     scaffoldBackgroundColor: primaryColor,
     accentColor: secondaryColor.withOpacity(0.5),
-    appBarTheme: AppBarTheme(elevation: 0.0, color: primaryColor, centerTitle: true),
+    appBarTheme: AppBarTheme(
+        elevation: 0.0,
+        color: primaryColor,
+        centerTitle: true,
+        brightness:  Brightness.dark
+    ),
     iconTheme: IconThemeData(color: Colors.white, size: 24),
     dividerColor: Colors.white54,
     dialogTheme: DialogTheme(
@@ -19,5 +24,14 @@ class AppTheme {
       titleTextStyle: boldTextStyle(),
       shape: OutlineInputBorder(borderRadius: BorderRadius.circular(16.0)),
     ),
+    primaryTextTheme: TextTheme(
+      headline5: TextStyle(
+        color: Colors.white
+      ),
+      headline4: TextStyle(
+        color: Colors.white
+      )
+    ),
+
   );
 }
