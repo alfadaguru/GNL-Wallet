@@ -9,6 +9,7 @@ const cardColor = Color(0xFF222224);
 // const cardColor = Color(0xFF26293D);
 const successColor = Color.fromRGBO(77, 227, 24, 1.0);
 
+const grayColor = Color.fromRGBO(119, 119, 119, 1);
 const blackColor1 = Color.fromRGBO(16, 6, 31, 1);
 const textTitleColor = Colors.white;
 const whiteText = const TextStyle(color: Colors.white);

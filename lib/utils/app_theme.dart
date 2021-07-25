@@ -11,6 +11,9 @@ class AppTheme {
     textTheme: GoogleFonts.montserratTextTheme(),
     scaffoldBackgroundColor: primaryColor,
     accentColor: secondaryColor.withOpacity(0.5),
+    inputDecorationTheme: InputDecorationTheme(
+
+    ),
     appBarTheme: AppBarTheme(
         elevation: 0.0,
         color: primaryColor,

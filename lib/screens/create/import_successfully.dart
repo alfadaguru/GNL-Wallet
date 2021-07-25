@@ -1,4 +1,5 @@
 
+import 'package:cryptocurrency_flutter/screens/add_token.dart';
 import 'package:cryptocurrency_flutter/utils/app_colors.dart';
 import 'package:cryptocurrency_flutter/widgets/primary_button.dart';
 import 'package:flutter/material.dart';
@@ -47,7 +48,7 @@ class _ImportSuccessfullyScreenState extends State<ImportSuccessfullyScreen> {
             PrimaryButton(
               text: 'Done',
               onPressed: () {
-
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => AddTokenScreen()));
               },
             )
           ],
