@@ -4,6 +4,8 @@ import 'package:cryptocurrency_flutter/utils/app_colors.dart';
 import 'package:cryptocurrency_flutter/widgets/primary_button.dart';
 import 'package:flutter/material.dart';
 
+import '../home_screen.dart';
+
 class ImportSuccessfullyScreen extends StatefulWidget {
   const ImportSuccessfullyScreen({Key? key}) : super(key: key);
 
@@ -32,7 +34,7 @@ class _ImportSuccessfullyScreenState extends State<ImportSuccessfullyScreen> {
 
             Container(
               padding: EdgeInsets.symmetric(vertical: 40),
-                child: Image.asset("images/app_images/success.gif")),
+                child: Image.asset("images/app_images/success.png")),
 
             Container(
               padding: EdgeInsets.symmetric(vertical: 20),
@@ -48,7 +50,7 @@ class _ImportSuccessfullyScreenState extends State<ImportSuccessfullyScreen> {
             PrimaryButton(
               text: 'Done',
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => AddTokenScreen()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen()));
               },
             )
           ],

@@ -26,6 +26,7 @@ class _CreateWalletScreenState extends State<CreateWalletScreen> {
             padding: const EdgeInsets.all(8.0),
             child: Text('Create Wallet', style: titleStyle(context)),
           ),
+          SizedBox(height: 80,),
           Image.asset('images/app_images/office.png'),
           Expanded(
               child:  Container(
@@ -34,10 +35,9 @@ class _CreateWalletScreenState extends State<CreateWalletScreen> {
                     topLeft: Radius.circular(20.0),
                     topRight: Radius.circular(20.0),
                   ),
-                  color: blackColor1,
+                  // color: blackColor1,
                 ),
-
-                padding: EdgeInsets.only(top: 10, left: 62, right: 62),
+                padding: EdgeInsets.only(top: 0, left: 62, right: 62),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

@@ -3,6 +3,8 @@ import 'package:cryptocurrency_flutter/widgets/primary_button.dart';
 import 'package:cryptocurrency_flutter/widgets/secondary_button.dart';
 import 'package:flutter/material.dart';
 
+import '../home_screen.dart';
+
 class VerifyRecoveryPhrase extends StatefulWidget {
   const VerifyRecoveryPhrase({Key? key}) : super(key: key);
 
@@ -136,7 +138,7 @@ class _VerifyRecoveryPhraseState extends State<VerifyRecoveryPhrase> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       PrimaryButton(text: 'Done', onPressed: () {
-
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen()));
                       })
                     ],
                   ),

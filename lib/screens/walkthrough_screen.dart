@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_html/shims/dart_ui_real.dart';
 import 'package:nb_utils/nb_utils.dart';
 
+import 'create/create_wallet.dart';
+
 class WalkThroughScreen extends StatefulWidget {
   @override
   _WalkThroughScreenState createState() => _WalkThroughScreenState();
@@ -159,7 +161,8 @@ class _WalkThroughScreenState extends State<WalkThroughScreen> {
                 ).onTap(() {
                   setValue(SharedPreferenceKeys.IS_FIRST, false);
 
-                  HomeScreen().launch(context, pageRouteAnimation: PageRouteAnimation.Fade, isNewTask: true);
+                  // HomeScreen().launch(context, pageRouteAnimation: PageRouteAnimation.Fade, isNewTask: true);
+                  CreateWalletScreen().launch(context, pageRouteAnimation: PageRouteAnimation.Fade, isNewTask: true);
                 }),
               ),
             ),
@@ -169,7 +172,8 @@ class _WalkThroughScreenState extends State<WalkThroughScreen> {
               child: TextButton(
                 onPressed: () {
                   setValue(SharedPreferenceKeys.IS_FIRST, false);
-                  HomeScreen().launch(context, pageRouteAnimation: PageRouteAnimation.Fade, isNewTask: true);
+                  // HomeScreen().launch(context, pageRouteAnimation: PageRouteAnimation.Fade, isNewTask: true);
+                  CreateWalletScreen().launch(context, pageRouteAnimation: PageRouteAnimation.Fade, isNewTask: true);
                 },
                 child: Text('Skip', style: secondaryTextStyle()),
               ),
